@@ -1,5 +1,5 @@
-var nodemailer = require('nodemailer');
-var dotenv = require('dotenv');
+const nodemailer = require('nodemailer');
+const dotenv = require('dotenv');
 dotenv.config(); // Load environment variables from.env file
 
 var transporter = nodemailer.createTransport({
@@ -10,9 +10,9 @@ var transporter = nodemailer.createTransport({
   }
 });
 
-var mailOptions = {
+const mailOptions = {
   from: 'anekeaustin@gmail.com',
-  to: 'okekedavid1333@gmail.com',
+  to: 'haileytodd007@gmail.com',
   subject: 'Sending Email using Node.js',
   text: 'That was easy!'
 };
